@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kanit", sans-serif;
+  background-image: linear-gradient(120deg, #e2c35d, #d88771);
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+}
+
+form button {
+  background-color: white;
+  color: #e2c35d;
+  transition: all 0.4s ease;
+}
+
+form button:hover {
+  background-color: #e2c35d;
+  color: black;
+}
+.todo-container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.todo-list
+{
+min-width: 30%;
+list-style: none;
+  
+}
+.todo
+{
+  font-size: 1.5rem;
+  margin: 1rem;
+  display: flex;
+  background: white;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+
+.todo li
+{
+  flex:1;
+}
+
+.delete-btn, .complete-btn
+{
+border: none;
+background-color: #b6170c;
+padding: 1rem;
+color: white;
+
+}
+
+
+.complete-btn
+{
+  background-color: rgb(28, 121, 28);
+}
+
+.todo-item
+{
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash ,
+.fa-check
+{
+  pointer-events: none;
+}
+
+.completed
+{
+  text-decoration: line-through;
+ opacity: 0.5; 
+
+
+}
+.fall
+{
+  transform: translateY(8rem) rotateZ(25deg);
+  opacity: 0.1;
+}
